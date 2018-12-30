@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Form Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+    <main>
+        <h1 class="plan__intro-title">Amazing! Let's dive in!</h1>
+        <form action="submitted.php" method="GET" class="inscription">
+            <label class="selection"><span>Title : </span>
+                <select name="gender" class="gender__selection">
+                    <option value="man" name="gender">Mr.</option>
+                    <option value="woman" name="gender">Ms.</option>
+                </select>
+            </label>
+            <label><span>First Name</span><input type="text" name="fname" placeholder="|" maxlength="15" pattern="[A-Za-z]{3,15}"></label>
+            <label><span>Last Name</span><input type="text" name="lname" placeholder="|" pattern="[A-Za-z]"></label>
+            <label><span>E-mail</span><input type="email" name="email" placeholder="|"></label>
+            <label><span>Password</span><input type="password" name="password" placeholder="|"></label>
+            <fieldset>
+                <legend>Finishing up!</legend>
+                <label class="terms"><input type="checkbox" name="terms">
+                    <span class="read-terms">Agree to <a href="#">Terms & Conditions</a></span>
+                </label>
+                <button class="main-buttons" type="submit">Sign Up</button>
+                <button class="main-buttons" type="reset">Clear</button>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>
